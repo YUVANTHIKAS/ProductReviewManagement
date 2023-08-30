@@ -27,6 +27,19 @@ namespace ProductReviewManagement
                 Console.WriteLine(data.ProductId + " " + data.Count);
             }
         }
+        public void RetrieveProductIdAndReview(List<Product> list)
+        {
+            var result = list.Select(x => new { ProductId = x.ProductID, Review = x.Review });
+            foreach (var data in result)
+            {
+                Console.WriteLine(data.ProductId + " " + data.Review);
+            }
+        }
+        public void SkipTopRecords(List<Product> list)
+        {
+            var result = list.Skip(5);
+            Display(result.ToList());
+        }
         public void Display(List<Product> list)
         {
             foreach (var data in list)
