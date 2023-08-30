@@ -128,8 +128,10 @@ namespace ProductReviewManagement
                 Review = "Bad",
                 isLike = false,
             });
+
+            //operations.RetrieveTopRecords(list);
             //operations.Display(list);
-            operations.RetrieveTopRecords(list);
+            operations.RetrieveAllRecordsWithCondition(list);
         }
     }
 }
