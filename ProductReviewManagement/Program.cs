@@ -138,7 +138,8 @@ namespace ProductReviewManagement
             //operations.AddDataToDataTable(list);
             //operations.AddDataToDataTable(list);
             //operations.RetrieveRecordsFromDataTable();
-            operations.AvgRating(list);
+            //operations.AvgRating(list);
+            operations.RetrieveUsingReview(list);
         }
     }
 }
